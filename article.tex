@@ -1,6 +1,8 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage[top=4cm, left=4cm, right=3cm, bottom=3cm]{geometry}
 \usepackage{graphicx}
+\usepackage[backend=biber, citestyle=ieee]{biblatex}
+\addbibresource{references.bib}
 \linespread{1.25}
 \graphicspath{ {./} }
 
@@ -23,8 +25,18 @@
   \end{center}
 \end{titlepage}
 
-\justify
 \setlength{\parindent}{4ex}
-IoT atau \textit{Internet of Things} adalah teknologi yang menghubungkan objek sehari-hari ke dalam jaringan internet. Tidak hanya terhubung ke dalam jaringan internet, perangkat IoT juga harus mampu mengirimkan data, menerima data, dan dikendalikan lewat jaringan internet. Jika sebuah perangkat tidak dapat melakukan hal-hal tersebut, maka bisa disimpulkan bahwa perangkat tersebut bukanlah sebuah perangkat IoT.
+IoT atau \textit{Internet of Things} adalah teknologi yang menghubungkan objek sehari-hari ke dalam jaringan internet.\cite{techtarget20} Tidak hanya terhubung ke dalam jaringan internet, perangkat IoT juga harus mampu mengirimkan data, menerima data, dan dikendalikan lewat jaringan internet. Jika sebuah perangkat tidak dapat melakukan hal-hal tersebut, maka bisa disimpulkan bahwa perangkat tersebut bukanlah sebuah perangkat IoT.
+
+\setlength{\parindent}{4ex}
+Sebuah perangkat IoT biasanya terdiri dari beberapa bagian seperti sensor, koneksi, pemrosesan data, dan antarmuka pengguna.\cite{dflair18} Sensor digunakan untuk mengambil data secara \textit{realtime}. Koneksi adalah media penghubung ke jaringan internet yang dapat berupa \textit{Wireles Fidelity} (WiFi), \textit{Bluetooth Low Energy} (BLE) atau bisa juga menggunakan jaringan \textit{Fifth Generation} (5G) yang kabarnya akan tersedia secara komersial pada tahun 2020.\cite{erricson17} Pemrosesan data berguna untuk memproses data yang
+dikirimkan oleh sensor. Pemrosesan data dapat berupa sekedar mengkonversi data ataupun memproses data menggunakan algoritma pembelajaran mesin. Antarmuka pengguna berguna untuk merepresentasikan data yang telah diproses menjadi mudah untuk dipahami oleh pengguna. Pengguna disini tidak dibataskan hanya pada manusia, tetapi juga mesin, karena sebuah perangkat IoT juga dapat berkomunikasi secara \textit{machine to machine} (M2M).
+
+\setlength{\parindent}{4ex}
+Sejarahnya, IoT hanya merupakan sebatas konsep saja sampai pada tahun 1999.\cite{dversity16} Sebelumnya, pada awal tahun 1980-an, IoT sudah mulai diterapkan secara sederhana oleh \textit{programmer} di Carnegie Mellon University pada mesin penjualan Coca-Cola. Sistem tersebut dapat memberi tahu apakah ada minuman yang tersedia atau tidak dan apakah minuman tersebut dingin atau tidak, sehingga mereka dapat memastikannya sebelum mengambil minuman ke mesini penjualan tersebut. Barulah pada tahun 1999, istilah IoT mulai digunakan
+oleh Direktur Eksekutif Laboratorium Auto-ID Massachusetts Institute of Technology (MIT) yaitu Kevin Ashton saat sedang memberikan presentasi di perusahaan Procter \& Gamble (P\&G).
+
+\newpage
+\printbibliography[title=Daftar Pustaka]
 \end{document}
 
