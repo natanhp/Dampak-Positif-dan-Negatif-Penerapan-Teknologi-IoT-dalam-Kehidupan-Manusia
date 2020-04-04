@@ -7,6 +7,6 @@ The article about positive and negative effect of IoT in the human life written 
 2. biber
 
 ### Compile to PDF
-'''bash
+```bash
 pdflatex article.tex
-'''
+```
